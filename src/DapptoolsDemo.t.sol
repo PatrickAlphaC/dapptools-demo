@@ -19,4 +19,9 @@ contract DapptoolsDemoTest is DSTest {
     function test_basic_sanity() public {
         assertTrue(true);
     }
+
+    function test_basic_fuzzing(uint8 value) public {
+        bool response = demo.play(value);
+        assertTrue(response);
+    }
 }
