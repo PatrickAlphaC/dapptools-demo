@@ -12,6 +12,7 @@
     - [The NFT Contract](#the-nft-contract)
     - [Remappings](#remappings)
   - [Deploying to a testnet](#deploying-to-a-testnet)
+    - [Interacting with contracts](#interacting-with-contracts)
   - [Verify your contract on Etherscan](#verify-your-contract-on-etherscan)
   - [And finally...](#and-finally)
 - [Resources](#resources)
@@ -374,6 +375,30 @@ seth-send: Transaction included in block 29244645.
 
 And you can see it on Etherscan. 
 
+### Interacting with contracts 
+
+To interact with deployed contracts, we can use `seth call` and `seth send`. 
+
+To *read* data from the blockchain, we could do something like:
+
+```
+ETH_RPC_URL=<YOUR_RPC_URL> seth call <YOUR_DEPLOYED_CONTRACT> "FUNCTION_NAME()" <ARGUMENTS_SEPARATED_BY_SPACE>
+```
+
+Like:
+
+```
+ETH_RPC_URL=<YOUR_RPC_URL> seth call 0x12345 "play(uint8)" 55
+```
+
+To which you'll get `0x0000000000000000000000000000000000000000000000000000000000000000` which means false. 
+
+To *write* data to the blockchain, we could do something like:
+
+```
+ETH_RPC_URL=<YOUR_RPC_URL> ETH_FROM=<YOUR_FROM_ADDRESS> seth send <YOUR_DEPLOYED_CONTRACT> "FUNCTION_NAME()" <ARGUMENTS_SEPARATED_BY_SPACE>
+```
+
 
 ## Verify your contract on Etherscan
 
@@ -399,6 +424,8 @@ ETHERSCAN_API_KEY=123456765 dapp verify-contract ./src/DapptoolsDemo.sol:Dapptoo
 1. Add `cache` to your `.gitignore` 
 2. Add `update:; dapp update` to your `Makefile`
    1. This will update and download the files in `.gitmodules` and `lib`
+3. Add a LICENSE 
+   1. You can just copy this one if you don't know how!
 
 And you're done!
 
