@@ -40,6 +40,7 @@ Also see the [official instructions](https://github.com/dapphub/dapptools).
 ```
 git clone 
 cd dapptools-demo 
+make # This installs the project's dependencies.
 ```
 
 3. Run tests 
@@ -395,7 +396,9 @@ ETHERSCAN_API_KEY=123456765 dapp verify-contract ./src/DapptoolsDemo.sol:Dapptoo
 
 ## And finally...
 
-Add `cache` to your `.gitignore` 
+1. Add `cache` to your `.gitignore` 
+2. Add `update:; dapp update` to your `Makefile`
+   1. This will update and download the files in `.gitmodules` and `lib`
 
 And you're done!
 
