@@ -1,0 +1,2 @@
+export DAPP_REMAPPINGS=$(cat remappings.txt)
+export DAPP_LINK_TEST_LIBRARIES=0
