@@ -28,6 +28,8 @@ You can work with this repo one of two ways.
 
 We will teach both.
 
+Video: 
+
 # QuickStart
 
 ## Setup 
@@ -438,7 +440,7 @@ If you liked this, consider donating!
     * [Hevm Docs](https://github.com/dapphub/dapptools/blob/master/src/hevm/README.md)
     * [Dapp Docs](https://github.com/dapphub/dapptools/tree/master/src/dapp/README.md)
     * [Seth Docs](https://github.com/dapphub/dapptools/tree/master/src/seth/README.md)
-* [DappTools Overview](https://www.youtube.com/watch?v=lPinWgaNceM)
+* [DappTools Overview](https://www.youtube.com/watch?v=ZurrDzuurQs)
 * [Chainlink](https://docs.chain.link)
 
 
