@@ -28,7 +28,10 @@ You can work with this repo one of two ways.
 
 We will teach both.
 
-Video: 
+Video: https://www.youtube.com/watch?v=ZurrDzuurQs
+Blog: https://medium.com/@patrick.collins_58673/how-to-use-dapptools-code-like-makerdao-fed9909d055b
+
+https://www.youtube.com/watch?v=ZurrDzuurQs
 
 # QuickStart
 
